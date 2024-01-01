@@ -200,6 +200,7 @@ f the input is a negative number, current sum is discarded and print -1. */
 
 
 
+/*Q) Take integer input a tell if it is a how many digits have. */
 
 import java.util.*;
 public class on_loop{
@@ -209,11 +210,11 @@ public class on_loop{
         int num = sc.nextInt();
         int temp = num; // It is used to copy the input into 'temp'
         int digit = 0;
-        if(num == 0){
+        if(num == 0){       // Special case: 0 has 1 digit
             digit = 1;
         }
         else{
-            while (num != 0) {
+            while (num != 0) {    // Repeatedly divide by 10 to count digits
                 num /= 10;
                 digit++;
             }
